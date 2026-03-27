@@ -12,10 +12,10 @@ Full SPI driver with DMX transmit, DMX receive, RDM, BLE, and linking support.
 | DMX transmit (internally generated) | ✅ | – |
 | DMX receive (callback + polling) | – | ✅ |
 | RDM Responder (via SPI) | – | ✅ |
-| RDM Controller (via SPI) (TimoTwo FX only | ✅ | – |
+| RDM Controller (via SPI) | ✅ (TimoTwo FX only) | – |
 | CRMX / W-DMX G3 / G4S protocol | ✅ | ✅ |
 | Linking / Unlink | ✅ | ✅ |
-| BLE configuration (CRMX Toolbox app) (TimoTwo FX only) | ✅ | ✅ |
+| BLE configuration (CRMX Toolbox app) | ✅ (TimoTwo FX only) | ✅ (TimoTwo FX only) |
 | Universe color & name | ✅ | ✅ (read) |
 | RF transmit power control | ✅ | – |
 | Signal quality | – | ✅ |
