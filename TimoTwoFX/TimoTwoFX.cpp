@@ -338,16 +338,16 @@ void TimoTwoFX::setOemInfo(uint16_t manufacturerId, uint16_t deviceModelId) {
 }
 
 void TimoTwoFX::setUniverseColor(uint8_t r, uint8_t g, uint8_t b) {
-    uint8_t buf[3] = {r, g, b};
+    uint8_t buf[3] = {b, g, r};
     writeRegister(TIMO_REG_UNIVERSE_COLOR, buf, 3);
 }
 
 void TimoTwoFX::getUniverseColor(uint8_t* r, uint8_t* g, uint8_t* b) {
     uint8_t buf[3];
     readRegister(TIMO_REG_UNIVERSE_COLOR, buf, 3);
-    *r = buf[0];
+    *b = buf[0];
     *g = buf[1];
-    *b = buf[2];
+    *r = buf[2];
 }
 
 void TimoTwoFX::setBatteryLevel(uint8_t percent) {
